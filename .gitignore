@@ -1,0 +1,18 @@
+# Dependencies
+
+/vendor/
+
+node_modules/
+
+# Build output (adjust the path once your build config is written)
+
+# e.g. /web/themes/custom/THEME/dist/
+
+# Local environment
+
+.lando.local.yml
+
+# OS noise
+
+.DS_Store
+
