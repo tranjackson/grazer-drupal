@@ -1,0 +1,92 @@
+{
+
+
+  "name": "grazer/grazer-drupal",
+
+  "description": "A Drupal 10 sub-theme for grazing animal registry site.",
+
+  "type": "project",
+
+  "license": "GPL-2.0-or-later",
+
+  "require": {
+
+
+    "drupal/core-recommended": "^10",
+
+
+    "drupal/core-composer-scaffold": "^10",
+
+
+    "composer/installers": "^2"
+
+  },
+
+  "require-dev": {
+
+
+    "drush/drush": "^13"
+
+  },
+
+  "conflict": {
+
+
+    "drupal/core": "*"
+
+  },
+
+  "extra": {
+
+
+    "drupal-scaffold": {
+
+      "locations": {
+
+        "web-root": "web/"
+
+      }
+
+    },
+
+    "installer-paths": {
+
+      "web/core": ["type:drupal-core"],
+
+      "web/modules/contrib/{$name}": ["type:drupal-module"],
+
+      "web/themes/contrib/{$name}": ["type:drupal-theme"],
+
+      "web/libraries/{$name}": ["type:drupal-library"],
+
+      "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+
+      "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
+
+    }
+
+  },
+
+  "config": {
+
+
+
+    "allow-plugins": {
+
+      "composer/installers": true,
+
+      "drupal/core-composer-scaffold": true
+
+
+
+    },
+
+    "sort-packages": true
+
+  },
+
+  "minimum-stability": "stable",
+
+  "prefer-stable": true
+
+}
