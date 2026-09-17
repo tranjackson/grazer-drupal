@@ -2,19 +2,41 @@
 
 /vendor/
 
+# Drupal core
+/web/core/
+
+# Composer-managed contributed extensions
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
+
+# Drupal scaffolded/root files that Composer can recreate
+/web/autoload.php
+/web/index.php
+/web/update.php
+/web/robots.txt
+/web/.htaccess
+
+# Drupal generated/user files
+/web/sites/*/files/
+/web/sites/*/private/
+
+# Local Drupal settings
+/web/sites/*/settings.php
+/web/sites/*/settings.local.php
+/web/sites/*/services.yml
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
 node_modules/
-
-# Build output (adjust the path once your build config is written)
-
-# e.g. /web/themes/custom/THEME/dist/
+/.editorconfig
+/.gitattributes
 
 # Local environment
 
 .lando.local.yml
 
-# OS noise
-
-.DS_Store
-
-/.editorconfig
-/.gitattributes

@@ -21,3 +21,13 @@ config:
 #   drush:
 
 #     service: appserver
+
+services:
+  mailpit:
+    type: mailpit:1.29
+    mailFrom:
+      - appserver
+
+proxy:
+  mailpit:
+    - mailpit.grazer-drupal.lndo.site
