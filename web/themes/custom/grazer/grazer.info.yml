@@ -1,0 +1,22 @@
+name: Grazer
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - grazer/base
+  - grazer/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - grazer/user
+  core/drupal.dropbutton:
+    - grazer/dropbutton
+  core/drupal.dialog:
+    - grazer/dialog
+  file/drupal.file:
+    - grazer/file
+  core/drupal.progress:
+    - grazer/progress
+description: 'Sub-theme for the Division of Conservation Grazing registry.'
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.6.17'
