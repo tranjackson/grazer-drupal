@@ -1,0 +1,23 @@
+name: grazer-drupal
+recipe: drupal10
+config:
+
+  webroot: web
+
+  php: '8.3'
+
+  database: mariadb:10.6.20
+
+  # drush: ^13          # optional; some recipes accept a drush pin here.
+
+# Optional tooling so `lando composer ...` and `lando drush ...` work.
+
+# tooling:
+
+#   composer:
+
+#     service: appserver
+
+#   drush:
+
+#     service: appserver
